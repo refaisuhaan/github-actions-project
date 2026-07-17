@@ -20,8 +20,8 @@ jobs:
         mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:4.0.0.4121:sonar \
           -Dsonar.host.url=https://sonarcloud.io \
           -Dsonar.token=${{ secrets.SONAR_TOKEN }} \
-          -Dsonar.projectKey=java-project-suhaan_suhaan \
-          -Dsonar.organization=suhaan
+          -Dsonar.projectKey=java-project-suhaan \
+          -Dsonar.organization=java-project-suhaan_suhaan
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
